@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/radius"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/dokter1"
+                android:scaleType="centerCrop"
+                android:id="@+id/a"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama dokter"
+                    android:textSize="11sp"
+                    android:id="@+id/b"
+                    android:fontFamily="@font/poppinsregular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi"
+                    android:id="@+id/c"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppinsregular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="17dp"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(123 review)"
+                    android:id="@+id/d"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="10sp"/>
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/star"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:id="@+id/e"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.0"
+                    android:id="@+id/f"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/poppinsregular"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

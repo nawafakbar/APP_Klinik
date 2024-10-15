@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageListDoctor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:fontFamily="@font/poppinsmedium"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:id="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctors"
+            android:fontFamily="@font/poppinsmedium"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/back"
+            android:id="@+id/title"
+            android:layout_marginStart="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example heart"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/ab2"
+            android:padding="15dp"
+            android:layout_marginHorizontal="25dp"
+            android:foregroundGravity="center_vertical"
+            android:id="@+id/search"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:orientation="horizontal"
+            android:id="@+id/hastag"
+            android:layout_below="@+id/search"
+            android:layout_marginTop="12dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="#heart"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/radius2"
+                android:backgroundTint="@color/ab2"
+                android:gravity="center"
+                android:textColor="@color/ab3"
+                android:layout_marginHorizontal="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="#Theet"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/radius2"
+                android:backgroundTint="@color/ab2"
+                android:gravity="center"
+                android:textColor="@color/ab3"
+                android:layout_marginHorizontal="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="#eyes"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@drawable/radius2"
+                android:backgroundTint="@color/ab2"
+                android:gravity="center"
+                android:textColor="@color/ab3"
+                android:layout_marginHorizontal="8dp"/>
+
+        </LinearLayout>
+
+
+            <GridView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/rv_icon"
+                android:numColumns="3"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_below="@+id/hastag"
+
+                />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_doctor"
+            android:numColumns="1"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_below="@+id/rv_icon"
+            android:layout_marginTop="25dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

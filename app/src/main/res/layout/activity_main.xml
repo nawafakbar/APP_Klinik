@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Self Care"
+            android:id="@+id/text"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/ijo"
+            android:fontFamily="@font/poppinsmedium"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:id="@+id/logo"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="40dp"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Loading..."
+            android:textColorHint="#80000000"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinslight"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
