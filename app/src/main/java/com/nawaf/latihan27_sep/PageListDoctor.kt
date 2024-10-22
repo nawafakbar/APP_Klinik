@@ -46,5 +46,17 @@ class PageListDoctor : AppCompatActivity() {
         val adapternya = adapterdokter(this, imagedoctor, namadoc, deskripsion, reviewnya, ratingnya)
         dokternya.adapter = adapternya
 
+        dokternya.setOnItemClickListener { _, _, position, _ ->
+            val intent = Intent(this, DetailGambar::class.java)
+            intent.putExtra("data", imagedoctor[position])
+            intent.putExtra("data1", namadoc[position])
+            intent.putExtra("data2", deskripsion[position])
+            intent.putExtra("data3", reviewnya[position])
+            intent.putExtra("data4", ratingnya[position])
+            startActivity(intent)
+        }
+
+
+
     }
 }

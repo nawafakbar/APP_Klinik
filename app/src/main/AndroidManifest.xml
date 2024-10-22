@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Latihan27_Sep"
         tools:targetApi="31">
         <activity
+            android:name=".DetailGambar"
+            android:exported="false" />
+        <activity
             android:name=".PageListDoctor"
             android:exported="false" />
         <activity
